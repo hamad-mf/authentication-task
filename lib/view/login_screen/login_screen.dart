@@ -110,7 +110,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   validator: (value) {
                     if (value != null && value.isEmpty) {
                       return "Enter a password";
-                    } else if (passController.text == cnfmpassController.text) {
+                    } else if (passController.text == value) {
                       return null;
                     } else {
                       return "Password did'nt match";
